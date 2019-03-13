@@ -1,0 +1,47 @@
+@import './styles.scss';
+@import './index.scss';
+
+.side-menu {
+    color: #2d384b;
+
+    .header {
+        height: 64px;
+        display: flex;
+        position: relative;
+        align-items: center;
+        color: white;
+        //border-bottom: 1px solid gray;
+    }
+
+    .menus ul, .menus ul li {
+        list-style: none;
+        color: $sidebar-color;
+    }
+
+    .menus {
+        padding-top: 1em;
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li span:not(.menu-title){ 
+                padding: 12px 30px 12px 14px;
+                display: block;
+                font-size: 1.2em;
+                border-radius: 4px;
+                white-space: nowrap;
+            }
+
+            li span.menu-title{
+                padding-left: 14px;
+                position: relative;
+                bottom: 5px;
+                font-size: 0.9em;
+            }
+
+            li.menu-collapsible li.menu-collapsible-item span{
+                background-color: #262f3f;
+            }
+        }
+    }
+}

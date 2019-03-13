@@ -1,0 +1,25 @@
+@import './styles.scss'; 
+
+.app-container {
+    display:flex;
+    .left-side {
+        width: $sidebar-max-width;
+        min-height: 100vh;
+        box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+        z-index: 999;
+        background-color: $side-background-color;
+    }
+
+    .right-side {
+        min-height: 100vh;
+        background-color: $dashboard-background;
+    }
+
+    .right-side, header{
+        width:calc(100vw - 240px);
+    }
+
+    header {
+        z-index: 998;
+    }
+}
